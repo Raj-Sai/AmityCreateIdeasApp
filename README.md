@@ -1,6 +1,6 @@
 # AmityCreateIdeasApp
 
-Here I am going to create simple ideas post application
+Here I am going to create simple ideas posting application, The app name is Limelight. 
 
 Limelight keep your Ideas alive and grow everyday. App daily provide you new ideas and ways to enhance by others opinion, Life hack tips and many more..
 
