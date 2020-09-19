@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Rubik-Bold.ttf">
+            <string>Rubik-Bold</string>
+        </array>
+        <array key="Rubik-Regular.ttf">
+            <string>Rubik-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--App Info Content View Controller-->
+        <scene sceneID="qaR-m8-tZh">
+            <objects>
+                <viewController storyboardIdentifier="AppInfoContentViewController" id="Kna-wu-EMl" customClass="AppInfoContentViewController" customModule="AmityCreateIdeasApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IMu-89-4v9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="452"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ciy-kP-eke">
+                                <rect key="frame" x="24" y="94" width="327" height="226.5"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="d9Z-cY-rgl">
+                                        <rect key="frame" x="44" y="0.0" width="239" height="167.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="d9Z-cY-rgl" secondAttribute="height" multiplier="327:229" id="s6g-yC-rps"/>
+                                        </constraints>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="pb1-Hp-Q0c">
+                                        <rect key="frame" x="120.5" y="177.5" width="86" height="49"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HEADING" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wbA-wk-t2h">
+                                                <rect key="frame" x="5.5" y="0.0" width="75.5" height="20"/>
+                                                <fontDescription key="fontDescription" name="Rubik-Bold" family="Rubik" pointSize="17"/>
+                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subheading" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="evL-hY-qM7">
+                                                <rect key="frame" x="0.0" y="30" width="86" height="19"/>
+                                                <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="16"/>
+                                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ciy-kP-eke" firstAttribute="top" secondItem="TGm-DG-oF3" secondAttribute="top" constant="50" id="73I-R1-pGS"/>
+                            <constraint firstItem="TGm-DG-oF3" firstAttribute="trailing" secondItem="ciy-kP-eke" secondAttribute="trailing" constant="24" id="IFP-8R-Zod"/>
+                            <constraint firstItem="TGm-DG-oF3" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="ciy-kP-eke" secondAttribute="bottom" constant="10" id="lgT-2K-RPl"/>
+                            <constraint firstItem="ciy-kP-eke" firstAttribute="leading" secondItem="TGm-DG-oF3" secondAttribute="leading" constant="24" id="zca-uf-DIh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="TGm-DG-oF3"/>
+                    </view>
+                    <size key="freeformSize" width="375" height="452"/>
+                    <connections>
+                        <outlet property="contentImageView" destination="d9Z-cY-rgl" id="81N-1s-2ze"/>
+                        <outlet property="headingLabel" destination="wbA-wk-t2h" id="QtE-GC-6tV"/>
+                        <outlet property="subHeadingLabel" destination="evL-hY-qM7" id="izG-DR-PyH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qvS-kj-trs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2966" y="-260"/>
+        </scene>
+    </scenes>
+</document>

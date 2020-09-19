@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qF9-Qv-Kmr">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Ideas View Controller-->
+        <scene sceneID="5L0-Ue-9gZ">
+            <objects>
+                <viewController restorationIdentifier="IdeasViewController" storyboardIdentifier="IdeasViewController" id="hr7-Hw-12h" customClass="IdeasViewController" customModule="AmityCreateIdeasApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dT2-wi-QZy">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="lm5-MY-0E3">
+                                <rect key="frame" x="16" y="104" width="382" height="46"/>
+                                <color key="backgroundColor" red="0.64313725489999995" green="0.078431372550000003" blue="0.76862745099999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="YnZ-zy-sBt"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="By Date"/>
+                                    <segment title="By Comments"/>
+                                    <segment title="By Likes"/>
+                                </segments>
+                                <color key="selectedSegmentTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <action selector="indexChanged:" destination="hr7-Hw-12h" eventType="valueChanged" id="9lR-5N-h2m"/>
+                                </connections>
+                            </segmentedControl>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="TmS-K1-0Kj">
+                                <rect key="frame" x="0.0" y="157" width="414" height="656"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="sectionIndexBackgroundColor" red="0.95686274510000002" green="0.97254901959999995" blue="0.98431372549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="IdeasTableViewCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="qco-WW-MET" customClass="IdeasTableViewCell" customModule="AmityCreateIdeasApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qco-WW-MET" id="qfU-bL-OCc">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.95686274510000002" green="0.97254901959999995" blue="0.98431372549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="hr7-Hw-12h" id="bta-BF-fY0"/>
+                                    <outlet property="delegate" destination="hr7-Hw-12h" id="MR3-rj-Jrb"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.95686274510000002" green="0.97254901959999995" blue="0.98431372549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="TmS-K1-0Kj" firstAttribute="trailing" secondItem="jbR-zP-bFl" secondAttribute="trailing" id="BoV-Sf-ZZj"/>
+                            <constraint firstItem="TmS-K1-0Kj" firstAttribute="top" secondItem="lm5-MY-0E3" secondAttribute="bottom" constant="8" id="FMF-4h-YXG"/>
+                            <constraint firstItem="jbR-zP-bFl" firstAttribute="trailing" secondItem="lm5-MY-0E3" secondAttribute="trailing" constant="16" id="Q6y-ip-p20"/>
+                            <constraint firstItem="lm5-MY-0E3" firstAttribute="leading" secondItem="jbR-zP-bFl" secondAttribute="leading" constant="16" id="W5c-bz-3Nj"/>
+                            <constraint firstItem="lm5-MY-0E3" firstAttribute="centerX" secondItem="dT2-wi-QZy" secondAttribute="centerX" id="dv0-HA-zN2"/>
+                            <constraint firstItem="lm5-MY-0E3" firstAttribute="top" secondItem="jbR-zP-bFl" secondAttribute="top" constant="16" id="hiJ-nz-gVp"/>
+                            <constraint firstItem="TmS-K1-0Kj" firstAttribute="bottom" secondItem="jbR-zP-bFl" secondAttribute="bottom" id="tuL-Tg-a51"/>
+                            <constraint firstItem="TmS-K1-0Kj" firstAttribute="leading" secondItem="jbR-zP-bFl" secondAttribute="leading" id="vSS-P3-c3p"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="jbR-zP-bFl"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="u2M-mk-FQi"/>
+                    <connections>
+                        <outlet property="ideasTabelView" destination="TmS-K1-0Kj" id="aeo-XV-VHK"/>
+                        <outlet property="segment" destination="lm5-MY-0E3" id="vTO-8R-lH0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="znh-TO-MQ8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="363.768115942029" y="-561.16071428571422"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Sb1-2x-EM3">
+            <objects>
+                <tabBarController id="qF9-Qv-Kmr" customClass="TabBarController" customModule="AmityCreateIdeasApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="jaY-H7-gpB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" red="0.64313725489999995" green="0.078431372550000003" blue="0.76862745099999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="selectedImageTintColor" red="0.64313725489999995" green="0.078431372550000003" blue="0.76862745099999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="zD3-SD-7wA" kind="relationship" relationship="viewControllers" id="cDB-Kt-4nc"/>
+                        <segue destination="bdv-kJ-neW" kind="relationship" relationship="viewControllers" id="wZs-yu-N3g"/>
+                        <segue destination="nTm-DW-p0Q" kind="relationship" relationship="viewControllers" id="a2N-dn-dgi"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="daf-S3-JgU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1467" y="-236"/>
+        </scene>
+        <!--PostIdeaViewController-->
+        <scene sceneID="Wj8-i7-VZj">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="PostIdeaViewControllerRe" storyboardName="PostIdeaStoryboard" referencedIdentifier="PostIdeaViewController" id="bdv-kJ-neW" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="1lf-SC-Z7U"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XLx-np-ups" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tabBarItem title="Ideas" id="Pgs-Fc-AdA"/>
+            </objects>
+            <point key="canvasLocation" x="-476" y="-177"/>
+        </scene>
+        <!--ProfileViewController-->
+        <scene sceneID="s1d-5z-c30">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="ProfileViewControllerRe" storyboardName="ProfileStoryboard" referencedIdentifier="ProfileViewController" id="nTm-DW-p0Q" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="QU1-0l-h6b"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kPv-e8-gx5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-486" y="-102"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="eXH-QI-iQj">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zD3-SD-7wA" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" image="home" id="6Rz-3F-whQ"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="HiQ-Xr-NUE">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="hr7-Hw-12h" kind="relationship" relationship="rootViewController" id="Zpb-V0-sla"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uDk-Je-X2s" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-546.37681159420299" y="-561.16071428571422"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="home" width="30" height="41"/>
+    </resources>
+</document>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "009FC098-6DA5-4D8A-8EED-01033F530F8B"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9A74FE2C-7E86-423F-A66F-AC576D3B9D89"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AmityCreateIdeasApp/scene/profile/ProfileModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "UserProfile"
+            landmarkType = "14">
+            <Locations>
+               <Location
+                  uuid = "9A74FE2C-7E86-423F-A66F-AC576D3B9D89 - bd9dcbbe7ac24f1a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AmityCreateIdeasApp.ProfileModel.UserProfile.init() -&gt; AmityCreateIdeasApp.ProfileModel.UserProfile"
+                  moduleName = "AmityCreateIdeasApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/am98576/Documents/Study/Aara/MVVM/AmityCreateIdeasApp/AmityCreateIdeasApp/scene/profile/ProfileModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "27"
+                  endingLineNumber = "27"
+                  offsetFromSymbolStart = "27">
+               </Location>
+               <Location
+                  uuid = "9A74FE2C-7E86-423F-A66F-AC576D3B9D89 - 5bcaf61c3ee4b6b7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AmityCreateIdeasApp.ProfileModel.UserProfile.init(from: Swift.Decoder) throws -&gt; AmityCreateIdeasApp.ProfileModel.UserProfile"
+                  moduleName = "AmityCreateIdeasApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/am98576/Documents/Study/Aara/MVVM/AmityCreateIdeasApp/AmityCreateIdeasApp/scene/profile/ProfileModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "27"
+                  endingLineNumber = "27"
+                  offsetFromSymbolStart = "112">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DECEDF49-E36C-4E9E-A74A-72DB3885936A"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AmityCreateIdeasApp/scene/profile/ProfileService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "getUserIdeas(request:completion:fail:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
