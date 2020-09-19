@@ -65,3 +65,23 @@ Screens
 6. Ability to view, comment on ideas and like.
 7. View user profile
 8. Logout 
+
+App ScreenShots
+---------------
+### 1.Onboard
+<img width="1000" height= "500" alt="onboard" src="https://user-images.githubusercontent.com/53143303/93671233-76672e00-facb-11ea-89ec-2e424c298f2f.png">
+
+### 2.Signup
+<img width="1195" alt="signup" src="https://user-images.githubusercontent.com/53143303/93671236-7e26d280-facb-11ea-8f08-06494cf07e0a.png">
+
+### 3.Post Ideas
+<img width="677" alt="postideas" src="https://user-images.githubusercontent.com/53143303/93671239-8a129480-facb-11ea-88e2-f095ff894e7e.png">
+
+### 4.Idea List
+<img width="1186" alt="ideaslist" src="https://user-images.githubusercontent.com/53143303/93671241-90a10c00-facb-11ea-99f3-dffdccdb45d1.png">
+
+### 5.Idea Details - comment and like
+<img width="1179" alt="ideaDetails" src="https://user-images.githubusercontent.com/53143303/93671283-dc53b580-facb-11ea-9a2b-d07b041aa17d.png">
+
+### 6.Profile
+<img width="1199" alt="profile" src="https://user-images.githubusercontent.com/53143303/93671248-98f94700-facb-11ea-8b1b-ac7b7649c5f7.png">
